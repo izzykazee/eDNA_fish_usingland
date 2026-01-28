@@ -3,18 +3,19 @@ This repository contains the coding and data files needed to accompany the manus
  # Using Environmental DNA (eDNA) and land cover usage to assess fish communities in southwest Ohio
  Authors: Isabella Leisgang and Kenneth Petren 
 
-Data: 
+Data: Uploaded in dryad link 
 
 pipeline.py: Metabarcoding script 
 
-R script: 
+alignment_sheet_organization.R: data file that organizes the alignment csv files output by vsearch's blast6out--
+
 ## Dependencies
 This pipeline makes use of the following programs: 
 1. cutadapt (https://cutadapt.readthedocs.io/en/stable/index.html)
 2. vsearch (https://github.com/torognes/vsearch)
 3. fastqc (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-Cutadapt and vsearch must be installed locally. The desktop of fastqc was used to inspect fastq.gz files. This pipeline has only been conducted in a Linux environment (Ubuntu). 
-## Usage
+Cutadapt and vsearch must be installed locally. The desktop of fastqc was used to inspect fastq.gz files before going through pipeline.py. This pipeline has only been conducted in a Linux environment (Ubuntu). 
+## Pipeline Usage
 The pipeline.py file contains a single script to trim primers and adapters, filter sequences, remove poly-A tails, decompress fast.gz files for vsearch, merge R1 and R2 files, filter post merge, cluster sequences, detect chimeras, and align with a reference database. This pipeline was carried out by opening the .py file and editing as a text file.
 
 For each step, the input_dir and output_dir must be changed to the proper file locations. It is reccomended that an output folder for each step is created, so that each step of the pipeline can be checked if needed.
