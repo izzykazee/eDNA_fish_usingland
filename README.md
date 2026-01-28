@@ -18,7 +18,8 @@ Cutadapt and vsearch must be installed locally. The desktop of fastqc was used t
 ## Pipeline Usage
 The pipeline.py file contains a single script to trim primers and adapters, filter sequences, remove poly-A tails, decompress fast.gz files for vsearch, merge R1 and R2 files, filter post merge, cluster sequences, detect chimeras, and align with a reference database. This pipeline was carried out by opening the .py file and editing as a text file.
 
-For each step, the input_dir and output_dir must be changed to the proper file locations. It is reccomended that an output folder for each step is created, so that each step of the pipeline can be checked if needed.
+For each step, the input_dir and output_dir must be changed to the proper file locations. Primer/ adapter sequences will also need to be updated in the first step of the pipeline.
+It is reccomended that an output folder for each step is created, so that each step of the pipeline can be checked if needed.
 
 The reference database must be saved as a fasta file and the location must be written for the query_files_dir. The alignment step will also save the alignment results as a csv file for each sequence wwell/ sample. The R scripts will then be used to combine and organize all of the alignment files into one sheet with the number of reads for each taxa for each sample. 
 
