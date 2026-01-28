@@ -1,6 +1,6 @@
 #Make sure folder paths and are set to correct folder locations!
 #Make sure column names are properly labeled with what exists in your excel files. blast6out-- should output csv files with the same column titles. 
-I reccomend running each step one at a time and not running the entire script at once.
+#I reccomend running each step one at a time and not running the entire script at once.
 
 
 #(1)Code for column separation for multiple files in a folder
