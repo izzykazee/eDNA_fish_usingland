@@ -5,7 +5,7 @@ This repository contains the coding and data files needed to accompany the manus
 
 Data: 
 
-Linux script: 
+pipeline.py: Metabarcoding script 
 
 R script: 
 ## Dependencies
