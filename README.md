@@ -3,11 +3,15 @@ This repository contains the coding and data files needed to accompany the manus
  # Using Environmental DNA (eDNA) and land cover usage to assess fish communities in southwest Ohio
  Authors: Isabella Leisgang and Kenneth Petren 
 
-Data: Uploaded in dryad link 
+Data->  Uploaded in dryad link 
+eDNA Site Codes.xlsx->  Sampling locations matched with codes present in raw sequence files
+Final Fish Sheet 2024.csv->  OTU counts used to determine species presence/absence
+eDNA_LC_data_for_R.xlsx->  Land cover data used in PCA, species richness and total sensitive species used for GLM
+pipeline.py->  Metabarcoding script 
+alignment_sheet_organization.R->  R scripts that organizes the alignment csv files output by vsearch's blast6out--
+filter_species.py->  script used to gather query sequences for certain aligned species
 
-pipeline.py: Metabarcoding script 
 
-alignment_sheet_organization.R: data file that organizes the alignment csv files output by vsearch's blast6out--
 
 ## Dependencies
 This pipeline makes use of the following programs: 
