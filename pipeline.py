@@ -14,7 +14,7 @@ for file_R1 in "${input_folder}"/*_R1.fastq.gz; do
     output_file=$(basename "${file_R1}" _R1.fastq.gz)
 
     # Run cutadapt for each pair of files and save the summary output
-    cutadapt -g GTGCCAGCMGCCGCGGTAA -G 	GGACTACHVGGGTWTCTAAT  \
+    cutadapt -g GTCGGTAAAACTCGTGCCAGC -G 	CATAGTGGGGTATCTAATCCCAGTTTG  \
     -o "${output_folder}/${output_file}.trimmed_R1.fastq.gz" \
     -p "${output_folder}/${output_file}.trimmed_R2.fastq.gz" \
     -e 0.25 \
