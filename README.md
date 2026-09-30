@@ -3,7 +3,7 @@ This repository contains the coding and data files needed to accompany the manus
  # Using Environmental DNA (eDNA) and land cover usage to assess fish communities in southwest Ohio
  Authors: Isabella Leisgang and Kenneth Petren 
 
-#Table of Contents
+# Table of Contents
 Data->  Uploaded in dryad link 
 eDNA Site Codes.xlsx->  Sampling locations matched with codes present in raw sequence files
 
