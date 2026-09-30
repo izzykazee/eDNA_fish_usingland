@@ -5,8 +5,8 @@
 
 This code would be ran to produce summary text files after the code is ran 
 #!/bin/bash
-input_folder="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/0Raw Sequences/16s"
-output_folder="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1TrimFilter/16s"
+input_folder="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/0Raw Sequences"
+output_folder="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1TrimFilter"
 
 # Iterate over all R1 files in the input folder
 for file_R1 in "${input_folder}"/*_R1.fastq.gz; do
@@ -22,13 +22,13 @@ for file_R1 in "${input_folder}"/*_R1.fastq.gz; do
 
 done
 -------------------Decompressing fastq.gz----------------------------------
-When starting to use VSEARCH, the GZ files must first be decompressed 
+When starting to use VSEARCH, the GZ files must first be decompressed to fastq files
 
 #!/bin/bash
 
 # Define input and output directories
-input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim/16s"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim/16s"
+input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim"
 
 # Ensure output directory exists
 mkdir -p "$output_dir"
@@ -48,8 +48,8 @@ done
 To merge a bulk amount of files w/ summary txt file 
 
 
-input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim/16s"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/2Merge/16s"
+input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/1.5NexteraTrim"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/2Merge"
 
 # Create output directory if it doesn't exist
 mkdir -p "$output_dir"
@@ -81,8 +81,8 @@ To filter bulk amount of files with specific error rates and lengths
 #!/bin/bash
 
 # Set the input and output directories
-input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/2Merge/16s"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/3MClean/16s"
+input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/2Merge"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/3MClean"
 
 # Create the output directory if it doesn't exist
 mkdir -p "$output_dir"
@@ -107,8 +107,8 @@ done
 #!/bin/bash
 
 # Input and output directories
-input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/3MClean/16s"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster/16s"
+input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/3MClean"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster"
 
 # Create output directory if it doesn't exist
 mkdir -p "$output_dir"
@@ -132,8 +132,8 @@ done
 
 		Chimera detection for a bulk amount of files: 
 
-input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster/16s"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/5ChimeraDetection/16s"
+input_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/5ChimeraDetection"
 
 # Create output directory if it doesn't exist
 mkdir -p "$output_dir"
@@ -155,8 +155,8 @@ Using semi-pairwise global alignment to pair reference sequence file with existi
 
 
 reference_database="/mnt/c/Users/izzyl/Cornell Sequencing Data/Reference Libraries/SILVA/silva_nr99_v138_wSpecies_train_set.fasta"
-output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/Alignment results/16s"
-query_files_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster/16s"
+output_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/Alignment results"
+query_files_dir="/mnt/c/Users/izzyl/Cornell Sequencing Data/2025 UER and Adam/Stream Group/4Cluster"
 
 # Create output directory if it doesn't exist
 mkdir -p "$output_dir"
